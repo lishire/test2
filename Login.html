@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登录页</title>
+<link type="text/css" rel="stylesheet" href="CSS/head.css">
+<link type="text/css" rel="stylesheet" href="CSS/foot.css">
+<script type="text/javascript">
+	 function people(){
+			  var name,pwd;
+		      name=document.getElementById("loginname");
+			  pwd=document.getElementById("loginpwd");
+			  var exp=/\w/;
+			  if(exp.test(name))
+			  {
+//                alert("非法字符");
+				  document.getElementById("text-name").innerHTML="用户名非法";
+			  }
+			  else
+			  {
+				  document.getElementById("text-names").innerHTML="";
+		      }
+             var password=/\D/;
+			  if(password.test(pwd))
+			  {
+//                alert("非法字符");
+				  document.getElementById("btn").innerHTML="";
+			  }
+			  else
+			  {
+				  document.getElementById("btn").innerHTML="密码错误！";
+		      }
+		  }
+</script>
+<style type="text/css">
+#header{
+	width:1024px;
+    height:160px;
+    margin:auto;}
+	
+#content{
+	width:980px;
+	height:500px;
+	border:0px solid #F00;
+	margin:auto;
+	background-image:url(images/login_bg.gif); background-repeat:no-repeat;
+        }	
+	#sidebar_a{
+		width:550px;
+		height:460px;
+		border:0px solid #009;
+		float:left;
+		margin-top:30px;
+		margin-left:20px;
+		}
+	p{ 
+		text-align:left;
+		padding-left:70px;
+		padding-top:10px;
+		}
+   #content .input1{
+	margin-left:170px;
+	margin-top:10px;
+	}
+	#sidebar_a ul{
+		list-style-type:none;
+		}
+	#sidebar_a ul li{
+		margin-top:10px;
+		margin-left:60px;
+		}
+	#sidebar_b{
+		width:380px;
+		height:460px;
+		border:0px solid #009;
+		float:left;
+		margin-top:30px;
+		margin-left:20px;
+		}
+	span{
+		font-weight:bold;
+		color:#06F;
+		margin-left:10px;}
+	#sidebar_b dl{
+		margin-top:30px;
+		margin-left:10px;
+
+		}
+   #sidebar_b dl dt{
+	   float:left;
+	   margin-left:10px;
+	   }
+	#sidebar_b dl dt dd{
+		margin-top:20px;
+		margin-left:5px;
+		/*line-height:100px;*/
+		}
+	#content .input2{
+	margin-left:40px;
+	margin-top:30px;
+	}
+	#sidebar_b-bottom{
+		width:260px;
+		height:60px;
+		margin-left:40px;
+	    margin-top:10px;
+		border:0px solid #F63;
+		border-color:#F90;
+	 	}
+	#sidebar_b-bottom dl{
+		margin-top:10px;}
+	
+	
+	#text-name{
+		color: red;
+	}
+	#btn{
+		color: blue;
+	}
+	
+#foot{
+	width:1024px;
+    height:160px;
+    margin:auto;}
+    
+</style>
+</head>
+
+<body>
+<div id="header"><iframe src="head.html" width="1024" height="160" frameborder="0" scrolling="no"></iframe></div>
+  <div id="content">
+  <div id="sidebar_a"><img src="images/logintitle.gif"/>
+  <p>会员名：<input type="text" name="username" id="loginname"/><!--（可包含a-z、0-9和下划线）-->
+  <span id="text-name"></span></p>
+  <p>密　码：<input type="text" name="id" id="loginpwd"/>
+  	<span id="btn"></span>
+  <!--（至少包含6个字符）--></p>
+ <!-- <a href="Login_Success.html" target="_parent">--><input class="input1" type="image" src="images/login.gif" value="" onclick="people()"/><!--</a>-->
+  
+  <ul>
+  <li>1.<a href="#">什么是安全登录</a>。</li>
+  <li>2.香港会员（繁体中文用户）由此<a href="#">登入</a></li>
+  <li>3.<a href="#">密码安全贴士</a>。</li>
+  <li>4.防止病毒或者木马窃取您的账户信息，<a href="#">在线检查</a>您的电脑是否安全。</li>
+  </ul>
+</div>
+
+  <div id="sidebar_b"><img src="images/register.gif"/>
+  <dl>
+  <dt><img src="images/8.png"/></dt>
+  <dl><span>便宜有好货！</span>超过7000万件商品任您选。</dl>
+  </dl>
+  
+  <dl>
+  <dt><img src="images/7.png"/></dt>
+  <dl><span>买卖更安全！</span>交易超安全。</dl>
+  </dl>
+  
+  <dl>
+  <dt><img src="images/9.png"/></dt>
+  <dl><span>免费开网店！</span>轻松赚钱交友。</dl>
+  </dl>
+  
+  
+  <dl>
+  <dt><img src="images/10.png"/></dt>
+  <dl><span>超人气社区！</span>精彩活动每一天</dl>
+  </dl>
+  
+  <a href="register.html" target="_parent"><input class="input2" type="image" src="images/registernow.gif" value=""/></a>
+  
+  <div id="sidebar_b-bottom">
+      <dl>
+      <dt><img src="images/5.png"/></dt>
+      <dd>您已经是会员？<a href="#">由此登入</a></dd>
+  </dl>
+  <dl>
+      <dt><img src="images/6.png"/></dt>
+      <dd>繁体中文用户由此<a href="#">注册</a></dd>
+  </dl>
+  
+  </div>
+  
+  
+  
+  
+  
+  </div>
+  
+  </div>
+
+
+
+
+
+
+<div id="foot"><iframe src="foot.html" width="1024" height="160" frameborder="0" scrolling="no"></iframe></div>
+</body>
+</html>

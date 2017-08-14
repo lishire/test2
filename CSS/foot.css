@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+/*结尾部分*/
+
+#foot {
+	width: 1024px;
+	height: 200px;
+	margin: auto;
+	text-align:center;
+	
+}
+#foot{
+		width:1000px;
+		height:20px;
+		border:0px solid #0C0;
+		margin:auto;
+		margin-top:10px;
+		margin-bottom:20px;
+		}
+	#foot ul{
+		list-style-type:none;
+
+		}
+	#foot ul li{
+		display:inline;
+		}
+	#foot ul li a{
+		text-decoration:none;
+		color:#999;
+		}
+	#foot ul li a:hover{
+		color:#F60;
+		}
+
+
+

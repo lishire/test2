@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>注册</title>
+<link type="text/css" rel="stylesheet" href="CSS/head.css">
+<link type="text/css" rel="stylesheet" href="CSS/foot.css">
+<script type="text/javascript">
+	function check(){
+		var name,pwd,emaile;
+		name=document.getElementById("login ");
+		pwd=document.getElementById("pwd").value;
+//		emaile=document.getElementById("e-mail").value;
+		var exp=/\W/;
+		if(exp.test(name)){
+			document.getElementById("name_txt").innerHTML="";
+		}
+		else{
+			document.getElementById("naem_txt").innerHTML="用户名非法";
+		}
+		var password=/\D/;
+		if(password.test(pwd)){
+			document.getElementById("pwds_txt").innerHTML="";
+		}
+		else{
+			document.getElementById("pwds_txt").innerHTML="密码错误";
+		}
+	}
+//	
+</script>
+<style type="text/css">
+#header{
+	width:1024px;
+    height:160px;
+    margin:auto;}
+
+#bg{
+	   width:980px;
+	   height:500px;
+	   background-image:url(images/reg_bg.gif); 
+	   background-repeat:no-repeat;
+	   border:0px solid #F00;
+	   margin:auto;
+	   margin-top:10px;
+		}
+   #sidebar_a{
+       width:500px;
+	   height:350px;
+	   border:0px solid #00F;
+	   float:left;
+	   margin-top:50px;
+	   line-height:25px;
+	   }
+    #sidebar_b{
+        width:227px;
+		height:350px;
+		position:relative;
+		float:left;
+	   border:0px solid #00F;
+	    margin-top:50px;
+		margin-left:147px;
+	   }
+   #but{
+	   width:200px;
+	   height:35px;
+	   margin-left:170px;
+	   margin-top:30px;
+	   }
+	#sub{
+		width:100px;
+		height:30px;
+		float:left;
+		}   
+	#res{
+		width:100px;
+		height:30px;
+		float:left;
+		}
+	#foot{
+  width:1024px;
+  height:300px;
+  margin:auto;}
+</style>
+</head>
+
+<body>
+<div id="header"><iframe src="head.html" width="1024" height="160" frameborder="0" scrolling="no"></iframe></div>
+<!--<form action="register_Success.html"  method="post">-->
+
+
+<div id="bg">
+  <div id="sidebar_a" >
+  
+  <table width="600" border="0">
+  <tr>
+    <td align="right" width="158"><label for="username">名字：</label></td>
+    <td width="184"><input type="text" name="username" id="username" value=""/></td>
+  </tr>
+  <tr>
+    <td align="right"><label for="name">姓氏：</td>
+    <td><input type="text" name="user" id="name"value=""/></td>
+  </tr>
+  <tr>
+    <td align="right"><label for="login">登录名：</td>
+    <td><input type="text" name="idname" id="login"/>（可包含a-z、0-9和下划线）
+    <span id="name_txt"></span></td>
+  </tr>
+  <tr>
+    <td align="right"><label for="pwd">密码：</td>
+    <td><input type="text" name="id"  id="pwd" min="6"/>（必须包含6个字符）</td>
+  </tr>
+  <tr>
+    <td align="right"><label for="again">再次出入密码：</td>
+    <td><input type="text" name="" id="again" value=""/></td>
+  </tr>
+  <tr>
+    <td align="right"><label for="e-mail">电子邮箱：</td>
+    <td><input type="text" name="user" id="e-mail" value=""/>（必须包含@字符）</td>
+  </tr>
+  <tr>
+    <td align="right">性别：</td>
+    <td><input type="radio" name="sex" value="male"><img src="images/Male.gif"/>男
+              <input type="radio" name="sex" value="female"><img src="images/Female.gif"/>女</td>
+  </tr>
+  <tr>
+    <td align="right">头像：</td>
+    <td> <input type="file"/> </td>
+  
+    
+  </tr>
+  <tr>
+    <td align="right">爱好：</td>
+    <td> <input type="checkbox" name="ah" value="sport">运动
+              <input type="checkbox" name="ah" value="talk">聊天 
+              <input type="checkbox" name="ah" value="game">玩游戏</td>
+  </tr>
+  <tr>
+    <td align="right">出生日期:</td>
+    <td>
+    <select>
+    <option selected=selected>1995</option>
+    <option>1996</option>
+    <option>1997</option>
+    <option>1998</option>
+    </select>
+    年
+    <select>
+    <option selected=selected>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    </select>
+    月
+    <select>
+    <option selected=selected>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    </select>
+    日
+    </td>
+  </tr>
+  </table>
+    <div id="but">
+     <!--<a href="register_Success.html" target="_parent">--><input name="submit" type="image" src="images/submit.gif" onclick="check()"/><!--</a>-->
+    <form  action="register.html" method="post"><input name="reset" type="image" src="images/reset.gif"/></form>
+    </div>
+
+  </div>
+  
+  <div id="sidebar_b">
+  <div><img src="images/read.gif"/><b>阅读贵美网服务协议</b></div>
+  <div id="text"><textarea name="textarea" rows="15" cols="28">欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。</textarea>
+  </div>
+</div>
+  </div>
+  
+ <div id="foot"><iframe src="foot.html" width="1024" height="160" frameborder="0" scrolling="no"></iframe></div> 
+
+</form>
+</body>
+</html>

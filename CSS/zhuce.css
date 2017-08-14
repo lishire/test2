@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+	}
+	/*头部*/
+#head{
+	width:1024px;
+	height:150px;
+	margin:auto;
+	background-image:url(../images/h_bg.jpg);
+	}
+	#subnav{
+		width:450px;
+		height:30px;
+		border:0px solid #F00;
+		margin-left:540px;
+		margin-top:12px;
+		}
+		
+	#subnav ul{
+		list-style-type:none;
+		}
+		.pic{
+		width:30px;
+		height:30px;
+		background-image:url(../images/icon.gif);
+		background-repeat:no-repeat;}
+		#pic1{
+			background-position:-39px 0px;
+			}
+		#pic2{
+			background-position:-83px 3px;
+			}
+		#pic3{
+			background-position:-125px 6px;
+			}
+	#subnav ul li{
+		float:left;
+		line-height:30px;
+		border:0px solid #0C3;
+			}
+	#subnav ul li a{
+		text-decoration:none;
+		color:#000;
+		}
+	/*#a{
+		width:300px;
+		height:20px;
+		border:1px solid #F00;
+		margin-left:660px;
+		margin-top:-2px;
+		}*/
+		
+	#nav{
+		float:left;
+		width:900px;
+		height:30px;
+		border:0px solid #F00;
+		margin-left:34px;
+		margin-top:50px;
+		line-height:30px;
+		}
+	#nav ul{
+		list-style-type:none; 
+		}
+	#nav ul li{
+		width:82px;
+		height:30px;
+		font-weight:bold;
+		float:left;
+		text-align:center;
+		border:0px solid #F00;		
+		}
+		#nav ul li a{
+			display:block;
+			width:70px;
+			height:30px;
+			text-decoration:none;
+		    color:#000
+			}
+	#nav ul li a:hover{
+		background-image:url(images/nav_bg.gif);
+		}
+	#bg{
+	   width:980px;
+	   height:500px;
+	   background-image:url(images/reg_bg.gif); 
+	   background-repeat:no-repeat;
+	   border:0px solid #F00;
+	   margin:auto;
+	   margin-top:10px;
+		}
+   #sidebar_a{
+       width:500px;
+	   height:350px;
+	   border:0px solid #00F;
+	   float:left;
+	   margin-top:50px;
+	   }
+    #sidebar_b{
+        width:400px;
+		height:350px;
+		position:relative;
+		float:left;
+	   border:0px solid #00F;
+	    margin-top:50px;
+		margin-left:10px;
+	   }
+   #but{
+	   width:200px;
+	   height:35px;
+	   margin-left:170px;
+	   margin-top:30px;
+	   }
+	#sub{
+		width:100px;
+		height:30px;
+		float:left;
+		}   
+	#res{
+		width:100px;
+		height:30px;
+		float:left;
+		}      
+	   
+	#define{
+		width:810px;
+		height:20px;
+		border:0px solid #0C0;
+		margin:auto;
+		margin-top:10px;
+		margin-bottom:20px;
+		}
+	#define ul{
+		list-style-type:none;
+
+		}
+	#define ul li{
+		display:inline;
+		}
+	#define ul li a{
+		text-decoration:none;
+		color:#999;
+		}
+	#define ul li a:hover{
+		color:#F60;
+		}

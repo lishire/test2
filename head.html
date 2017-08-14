@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="CSS/head.css"/>
+<script type=" text/javascript">
+  	    window.onload=function(){
+  		var dom =document.getElementById("welcom_time");
+//		var year,month,date,hour,minute,second;
+  	
+  		function clock(){
+  			var today=new Date();
+  			var year=today.getFullYear();
+  			var month=today.getMonth()+1;
+  			var date=today.getDate();
+  			//var day=today.getDay();
+  			var hour=today.getHours();
+  			var minute=today.getMinutes();
+  			var second=today.getSeconds();
+  			dom.innerHTML="";
+  			dom.innerText= year+"年"+month+"月"+date+"日"+hour+"时"+minute+"分"+second+"秒";
+//			document.close();
+//		setTimeout("clock()",1000);
+  		}
+//		clock();
+      setInterval(function(){clock()},1000)
+}
+  	</script>
+</head>
+
+<body>
+<div id="head">
+   <div id="subnav">
+     <ul>
+       <li class="pic"></li>
+       <li><a href="Buy.html" target="_parent">购物车</a></li>
+       <li id="pic1" class="pic"></li>
+       <li><a href="help_center.html" target="_parent">帮助中心</a></li>
+       <li id="pic2" class="pic"></li>
+       <li><a href="Product-list.html" target="_parent">加入收藏</a></li>
+       <li id="pic3" class="pic"></li>
+       <li><a href="index.html" target="_parent">设为首页</li>
+       <li><a href="Login.html" target="_parent"><input type="button" name="" value="登录"/></a></li>
+       <li><a href="register.html" target="_parent"><input type="button" name="" value="注册"/></a></li>
+     </ul>
+  </div>
+  <div id="welcom">您好，欢迎访问贵美商城！<span id="welcom_time"></span></div>
+  <div id="nav">
+    <ul>
+    <li><a href="index.html" target="_parent">首页</a></li>
+    <li><a href="Product-list.html" target="_parent">家用电器</a></li>
+    <li><a href="Product-class.html" target="_parent">手机数码</a></li>
+    <li><a href="Buy.html" target="_parent">日用百货</a></li>
+    <li><a href="Login.html" target="_parent">书籍</a></li>
+    <li><a href="help_center.html" target="_parent">帮助中心</a></li>
+    <li><a href="Login_Success.html" target="_parent">免费开店</a></li>
+    <li><a href="register_Success.html" target="_parent">全球咨询</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
